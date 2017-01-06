@@ -1,0 +1,48 @@
+{
+  "name": "insa-talks/tedxinsa.com",
+  "type": "project",
+  "license": "MIT",
+  "description": "Website for TEDxINSA",
+  "homepage": "https://tedxinsa.com/",
+  "authors": [
+    {
+      "name": "Charles Samborski",
+      "email": "demurgos@demurgos.net",
+      "homepage": "https://demurgos.net"
+    }
+  ],
+  "keywords": [
+    "tedx", "insa", "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/insa-talks/tedxinsa.com/issues"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [],
+  "require": {
+    "php": ">=7.0.14",
+    "composer/installers": "~1.0.12",
+    "vlucas/phpdotenv": "^2.0.1",
+    "johnpbloch/wordpress": "4.7",
+    "oscarotero/env": "^1.0",
+    "roots/wp-password-bcrypt": "1.0.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.5.1"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
+    ]
+  }
+}
