@@ -31,12 +31,14 @@ Query OK, 0 rows affected (0.04 sec)
 
 ## Configure `.env`
 
+Copy the file **.env.example** to **.env**:
+
 ```text
 # Possible values: development production
 WP_ENV=development
-# Edit this value
+# Set the external URI of the root of the website
 WP_HOME=http://tedxinsa.localhost
-# Do not edit this value
+# Do not edit the following value (used internally)
 WP_SITEURL=${WP_HOME}/wp
 ```
 
