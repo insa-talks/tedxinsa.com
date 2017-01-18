@@ -20,14 +20,36 @@
   "config": {
     "preferred-install": "dist"
   },
-  "repositories": [],
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "twg/TEDxTheme",
+        "version": "1.0.0",
+        "type": "wordpress-theme",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/twg/TEDxTheme/archive/develop.zip"
+        },
+        "source": {
+          "url": "https://github.com/twg/TEDxTheme.git",
+          "type": "git",
+          "reference":"develop"
+        },
+        "require" : {
+          "composer/installers": "~1.0.12"
+        }
+      }
+    }
+  ],
   "require": {
     "php": ">=7.0.14",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.7",
     "oscarotero/env": "^1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "twg/TEDxTheme": "1.0.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

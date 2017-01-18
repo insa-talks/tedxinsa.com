@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0b1e27df923dd73f36e5f06692cba9c",
+    "content-hash": "5cacca73ca1a40936d3aecae42be4eac",
     "packages": [
         {
             "name": "composer/installers",
@@ -289,6 +289,25 @@
                 "wordpress wp bcrypt password"
             ],
             "time": "2016-03-01T16:27:06+00:00"
+        },
+        {
+            "name": "twg/TEDxTheme",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twg/TEDxTheme.git",
+                "reference": "develop"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/twg/TEDxTheme/archive/develop.zip",
+                "reference": "develop",
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0.12"
+            },
+            "type": "wordpress-theme"
         },
         {
             "name": "vlucas/phpdotenv",
