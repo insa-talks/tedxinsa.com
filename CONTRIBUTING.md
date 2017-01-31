@@ -57,6 +57,15 @@ Check that the following line is uncommented in **/etc/php/php.ini**:
 extension=mysqli.so
 ```
 
+## Run
+
+```shell
+# Run as root
+systemctl start nginx
+systemctl start php-fpm
+systemctl start mariadb
+```
+
 ## Wordpress Installation
 
 ### Step 0
