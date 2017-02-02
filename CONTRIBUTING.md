@@ -1,11 +1,15 @@
-# 
+# Contributing
 
-## Dependencies
+## Requirements
 
-- _nginx_
-- _php_ 7
-- _MariaDB_
-- _composer_
+- [_nginx_][notes-nginx]
+- [_php-fpm_ 7][notes-php]
+- [_MariaDB_][notes-mariadb]
+- [_composer_][notes-composer]
+
+### PHP extensions
+
+- mysql (`php-mysql` for Debian)
 
 ## Create a MariaDB database
 
@@ -29,7 +33,7 @@ Query OK, 0 rows affected (0.04 sec)
 
 ```
 
-## Configure `.env`
+## Configure **.env**
 
 Copy the file **.env.example** to **.env**:
 
@@ -37,7 +41,7 @@ Copy the file **.env.example** to **.env**:
 # Possible values: development production
 WP_ENV=development
 # Set the external URI of the root of the website
-WP_HOME=http://tedxinsa.localhost
+WP_HOME=https://tedxinsa.localhost
 # Do not edit the following value (used internally)
 WP_SITEURL=${WP_HOME}/wp
 ```
@@ -89,3 +93,8 @@ systemctl start mariadb
 ## References
 
 - https://roots.io/bedrock/docs/installing-bedrock/
+
+[notes-composer]: https://github.com/demurgos/notes/blob/master/tools/languages/php/composer/installation.md
+[notes-mariadb]: https://github.com/demurgos/notes/blob/master/tools/databases/mariadb/index.md
+[notes-nginx]: https://github.com/demurgos/notes/blob/master/tools/server/nginx/index.md
+[notes-php]: https://github.com/demurgos/notes/blob/master/tools/languages/php/index.md
