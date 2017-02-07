@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d1df025ad1bab85e480f8dbb934a088",
+    "content-hash": "2eb9552722dfb15e32f34f4069e18f26",
     "packages": [
         {
             "name": "composer/installers",
@@ -380,6 +380,106 @@
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
+            "name": "wpackagist-plugin/contact-form-7",
+            "version": "4.6.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/contact-form-7/",
+                "reference": "tags/4.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.6.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/flickr-justified-gallery",
+            "version": "3.4.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/flickr-justified-gallery/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/flickr-justified-gallery.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/flickr-justified-gallery/"
+        },
+        {
+            "name": "wpackagist-plugin/iframe",
+            "version": "4.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/iframe/",
+                "reference": "tags/4.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/iframe.4.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/iframe/"
+        },
+        {
+            "name": "wpackagist-plugin/liveblog",
+            "version": "1.5.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/liveblog/",
+                "reference": "tags/1.5.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/liveblog.1.5.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/liveblog/"
+        },
+        {
+            "name": "wpackagist-plugin/newsletter",
+            "version": "4.7.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/newsletter/",
+                "reference": "tags/4.7.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/newsletter.4.7.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/newsletter/"
+        },
+        {
             "name": "wpackagist-plugin/option-tree",
             "version": "2.6.0",
             "source": {
@@ -398,6 +498,86 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/option-tree/"
+        },
+        {
+            "name": "wpackagist-plugin/photo-gallery",
+            "version": "1.3.28",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/photo-gallery/",
+                "reference": "tags/1.3.28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/photo-gallery.1.3.28.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/photo-gallery/"
+        },
+        {
+            "name": "wpackagist-plugin/wc-gallery",
+            "version": "1.53",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wc-gallery/",
+                "reference": "tags/1.53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wc-gallery.1.53.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wc-gallery/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-maintenance-mode",
+            "version": "2.0.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-maintenance-mode/",
+                "reference": "tags/2.0.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-maintenance-mode.2.0.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-maintenance-mode/"
+        },
+        {
+            "name": "wpackagist-plugin/wufoo-shortcode",
+            "version": "1.43",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wufoo-shortcode/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wufoo-shortcode.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wufoo-shortcode/"
         }
     ],
     "packages-dev": [
