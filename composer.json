@@ -40,16 +40,22 @@
           "composer/installers": "~1.0.12"
         }
       }
+    },
+    {
+      "type":"composer",
+      "url":"https://wpackagist.org"
     }
   ],
   "require": {
     "php": ">=7.0.14",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.7",
+    "johnpbloch/wordpress": "4.7.2",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "twg/TEDxTheme": "1.0.0"
+    "twg/TEDxTheme": "1.0.0",
+    "wpackagist-plugin/advanced-custom-fields":"4.4.11",
+    "wpackagist-plugin/option-tree":"2.6.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

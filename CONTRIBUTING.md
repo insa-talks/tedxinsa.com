@@ -90,6 +90,10 @@ systemctl start mariadb
 - Visibilité pour les moteurs de recherche
   - **Keep the default** (unchecked)
 
+### Step 2
+
+- In the administration panel, choose the TEDx theme.
+
 ## References
 
 - https://roots.io/bedrock/docs/installing-bedrock/
