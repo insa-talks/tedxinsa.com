@@ -1,6 +1,18 @@
 ## Pages
 
-Ajouter une nouvelle page du type "Homepage".
+1. Ajouter les pages uniques:
+   - Accueil (Modèle: Homepage)
+   - Speakers
+   - Talks
+   - Organisation
+   - Sponsors
+   - À propos
+   - Informations Pratiques
+   - Contact
+
+2. Apparence / Menus
+
+   - Cocher / Ajouter au menu
 
 ## Customization
 
