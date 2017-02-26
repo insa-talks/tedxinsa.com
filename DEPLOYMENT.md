@@ -61,3 +61,10 @@ cd beta
 cp .env.example .env
 nano .env
 ```
+
+## Install dependencies
+
+```shell
+# Run as tedxinsa.com
+composer install
+```
