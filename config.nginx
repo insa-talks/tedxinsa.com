@@ -1,0 +1,71 @@
+# https://codex.wordpress.org/Nginx
+
+# WordPress single site rules.
+# Designed to be included in any server {} block.
+
+# Import PHP backend (done in the main config file)
+# include config/upstream-php.nginx;
+
+
+# HTTPS
+server {
+  # HTTPS port
+  listen 443 ssl;
+  listen [::]:443 ssl;
+
+  # Space-separated hostnames (wildcard * is accepted)
+  server_name tedxinsa.com www.tedxinsa.com;
+
+  # Certificates
+  ssl_certificate /etc/letsencrypt/live/tedxinsa.com/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/tedxinsa.com/privkey.pem;
+  # Enforce HTTPS for 30 days: 2592000 = 3600 * 24 * 30
+  # add_header Strict-Transport-Security "max-age=2592000; includeSubDomains" always;
+
+  access_log /var/www/tedxinsa.com/main.access.log;
+  error_log /var/www/tedxinsa.com/main.errors.log;
+
+  # Root directory of the website
+  root /var/www/tedxinsa.com/main/web/;
+
+  # Use index.php files for directories
+  index index.php;
+
+  location = /favicon.ico {
+    log_not_found off;
+  }
+
+  location = /robots.txt {
+    allow all;
+    log_not_found off;
+  }
+
+  location / {
+    # This is cool because no php is touched for static content.
+    # include the "?$args" part so non-default permalinks doesn't break when using query string
+    try_files $uri $uri/ /index.php?$args;
+  }
+
+  location ~ \.php$ {
+    #NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+    include fastcgi.conf;
+    fastcgi_intercept_errors on;
+    fastcgi_pass php;
+  }
+
+  location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
+    expires max;
+    log_not_found off;
+  }
+}
+
+# HTTP
+server {
+  # HTTP port
+  listen 80;
+  listen [::]:80;
+  server_name tedxinsa.com www.tedxinsa.com;
+  # Enforce HTTPS for 30 days: 2592000 = 3600 * 24 * 30
+  # add_header Strict-Transport-Security "max-age=2592000; includeSubDomains" always;
+  return 307 https://$host$request_uri;
+}

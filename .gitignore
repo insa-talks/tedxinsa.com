@@ -37,3 +37,6 @@ bin
 .vagrant
 
 *.log
+
+# Editor
+.idea
